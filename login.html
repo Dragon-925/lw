@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function t(){
+			var t,user,pwd;
+			t=document.getElementById('touch');
+			
+				user = document.getElementById('user').value;
+				pwd = document.getElementById('pwd').value;
+				
+				if(user == "lw" && pwd == "1999"){
+					alert("真聪明，登陆成功");
+					window.location.href="https://github.com/Dragon-925/lw/lw.html";
+					
+				}else{
+					alert("宝,输入有误,再好好想想！")
+				}
+			}
+		</script>
+		
+		<style type="text/css">
+			table{
+				margin: 300px auto;
+				text-align: center;
+			}
+			#touch{
+				text-align: center;
+			}
+		</style>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>账号:</td>
+				<td><input type="text" id="user"/></td>
+			</tr>
+			<tr>
+				<td>密码:</td>
+				<td><input type="text" id="pwd"></td>
+			</tr>
+			<tr><td colspan="2"><input type="button" id="touch" value="登陆" onclick="t()"></td></tr>
+		</table>
+	</body>
+</html>
